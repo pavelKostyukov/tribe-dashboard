@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Состояние проекта Tribe на 20 ноября 2026: этап, маркетинг и продвижение, продукт, риски.">
+  <title>Tribe: состояние проекта</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="site-head-inner">
+      <a class="site-brand" href="./">Tribe</a>
+      <nav class="site-nav" aria-label="Страницы">
+        <a href="./" aria-current="page">Состояние проекта</a>
+        <a href="strategy.html">Разворот или закрытие</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tb">
+      <header class="tb-head" id="head">
+        <h1 class="tb-title">Tribe: состояние проекта</h1>
+        <div class="tb-pills">
+          <span class="tb-pill is-frozen">Заморожен с 27.10.2026</span>
+          <span class="tb-pill is-bad">Спроса пока нет</span>
+          <span class="tb-pill is-neutral">Решение в январе 2027</span>
+        </div>
+        <p class="tb-lede">Продукт собран и работает на автопилоте, но пользователей единицы: посев в Telegram за <span data-source="kpi" data-field="value" data-where="id=ad_spend">—</span>&nbsp;₽ дал <span data-source="funnel" data-field="value" data-where="id=users">—</span> регистрацию, а Яндекс нашёл в sitemap <span data-source="kpi" data-field="value" data-where="id=yandex_links">—</span> ссылок. Ставка сейчас на поиск: в январе смотрим, пришли ли люди из Яндекса и Google.</p>
+        <p class="tb-small tb-muted" style="margin:0">Источник: база знаний tribe.md, обновлена 20.11.2026.</p>
+      </header>
+
+      <nav class="tb-tabs" role="tablist" aria-label="Разделы">
+        <button class="tb-tab" role="tab" id="tab-obzor" aria-controls="obzor" aria-selected="true">Обзор</button>
+        <button class="tb-tab" role="tab" id="tab-marketing" aria-controls="marketing" aria-selected="false">Маркетинг и продвижение</button>
+        <button class="tb-tab" role="tab" id="tab-product" aria-controls="product" aria-selected="false">Продукт и техника</button>
+        <button class="tb-tab" role="tab" id="tab-risks" aria-controls="risks" aria-selected="false">Риски и уроки</button>
+      </nav>
+
+      <!-- ОБЗОР -->
+      <section class="tb-pane" id="obzor" role="tabpanel" aria-labelledby="tab-obzor">
+        <div class="tb-section" id="kpis">
+          <h2 class="tb-h2">Ключевые цифры</h2>
+          <div class="tb-tiles">
+            <div class="tb-card tb-tile"><span class="tb-tile-label">Событий в базе</span><span class="tb-tile-value">~<span data-source="kpi" data-field="value" data-where="id=events">—</span></span><span class="tb-tile-note">Свои игры и парсер: kassir, KudaGo, Timepad, МТС Live, Мосбилет</span></div>
+            <div class="tb-card tb-tile"><span class="tb-tile-label">Живых организаторов</span><span class="tb-tile-value"><span data-source="kpi" data-field="value" data-where="id=organizers">—</span></span><span class="tb-tile-note">и около <span data-source="kpi" data-field="value" data-where="id=games">—</span> их игр, заполнены вручную</span></div>
+            <div class="tb-card tb-tile is-bad"><span class="tb-tile-label">Пользователи Android, 30 дней</span><span class="tb-tile-value"><span data-source="kpi" data-field="value" data-where="id=android_users">—</span></span><span class="tb-tile-note">Firebase, в основном тестировщики</span></div>
+            <div class="tb-card tb-tile is-bad"><span class="tb-tile-label">Доход</span><span class="tb-tile-value"><span data-source="kpi" data-field="value" data-where="id=revenue">—</span>&nbsp;₽</span><span class="tb-tile-note">Монетизация не запускалась</span></div>
+            <div class="tb-card tb-tile"><span class="tb-tile-label">Потрачено на рекламу</span><span class="tb-tile-value">~<span data-source="kpi" data-field="value" data-where="id=ad_spend">—</span>&nbsp;₽</span><span class="tb-tile-note">Один посев в Telegram, плюс сервер</span></div>
+            <div class="tb-card tb-tile"><span class="tb-tile-label">Подписчиков Telegram-канала</span><span class="tb-tile-value"><span data-source="kpi" data-field="value" data-where="id=tg_subs">—</span></span><span class="tb-tile-note">t.me/tribeEvent, посев не добавил ни одного</span></div>
+          </div>
+        </div>
+
+        <div class="tb-section" id="january">
+          <h2 class="tb-h2">Точка решения: январь 2027</h2>
+          <p class="tb-muted" style="margin:0">До 1 января осталось <b id="days-left">—</b> дн. Новые функции и рекламу до января не делаем.</p>
+          <div class="tb-crit">
+            <div class="tb-crit-box is-go">
+              <span class="tb-h3"><span data-source="kpi" data-field="value" data-where="id=goal_search">—</span>+ человек из поиска и есть записи</span>
+              <span>Размораживаем, реклама малыми тестами по 2–3 тыс. ₽.</span>
+            </div>
+            <div class="tb-crit-box is-stop">
+              <span class="tb-h3">Меньше</span>
+              <span>Закрываем Tribe «со спокойной совестью».</span>
+            </div>
+          </div>
+          <p class="tb-small tb-muted" style="margin:0">Сколько людей уже пришло из поиска, в базе знаний не записано. Это видно в Метрике: Привлечение → Переходы из поисковых систем.</p>
+        </div>
+
+        <div class="tb-section" id="verdict">
+          <h2 class="tb-h2">Главный вывод на сегодня</h2>
+          <div class="tb-callout">Люди «в теме» ходят к своим ведущим, агрегатор им не нужен. Целевая аудитория Tribe — новички, которые ищут игры в Яндексе. Поэтому вся ставка до января на SEO, а главный блокер в том, что Яндекс так и не прочитал sitemap.</div>
+        </div>
+
+        <div class="tb-section" id="timeline">
+          <h2 class="tb-h2">Хронология 2026</h2>
+          <div class="tb-tablewrap">
+            <table class="tb-table">
+              <thead><tr><th>Когда</th><th>Область</th><th>Что произошло</th></tr></thead>
+              <tbody data-table="timeline"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- МАРКЕТИНГ -->
+      <section class="tb-pane" id="marketing" role="tabpanel" aria-labelledby="tab-marketing" hidden>
+        <div class="tb-section" id="mk-summary">
+          <h2 class="tb-h2">Коротко о продвижении</h2>
+          <p class="tb-lede">Пробовали один платный канал (посев в Telegram) и вложились в SEO. Посев дал дешёвые клики, но почти ноль записей. SEO сделано технически, но Яндекс ещё не проиндексировал сайт, поэтому органики пока нет. Остальные каналы и рекламные планы до запуска не дошли.</p>
+        </div>
+
+        <div class="tb-three" id="mk-lists">
+          <div class="tb-col is-done" id="mk-done">
+            <div class="tb-col-head"><h3 class="tb-h2">Что сделали</h3></div>
+
+            <div class="tb-group"><span class="tb-group-name">Позиционирование</span>
+              <ul class="tb-list">
+                <li><b>Ниша «Игры для души и мозга»</b><span class="tb-d">29.08: мафия, настолки, квизы, трансформационные и психологические игры. Только Москва</span></li>
+                <li><b>Слоган и страница «Зачем мы» (/about)</b><span class="tb-d">«Не просто провести вечер. Прожить его.»</span></li>
+                <li><b>Лента отсортирована под ЦА</b><span class="tb-d">Игры, концерты, вечеринки первыми, Москва по умолчанию</span></li>
+                <li><b>Лендинг «Найди своих»</b><span class="tb-d">Март–апрель, вместе с планом на 15 000 ₽ (SMM, SEO-тексты, посевы)</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Telegram</span>
+              <ul class="tb-list">
+                <li><b>Канал t.me/tribeEvent и автопостер</b><span class="tb-d">Раз в час с 23–26.09, с 01.10 три раза в день</span></li>
+                <li><b>Кнопка «Вступай в Племя» в шапке</b><span class="tb-d">09–10.10, теперь ведёт в канал (раньше по ошибке вела в бота)</span></li>
+                <li><b>Посев через Telega.in</b><span class="tb-d">10.10, <span data-source="kpi" data-field="value" data-where="id=seeding_channels">—</span> каналов, разбор результатов 11.10</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">SEO</span>
+              <ul class="tb-list">
+                <li><b>SEO-страницы для роботов</b><span class="tb-d">seo-meta отдаёт /events и /fid с названием и описанием, с 15.10 работает как служба с автоперезапуском</span></li>
+                <li><b>Статические страницы событий и лендинги</b><span class="tb-d"><span data-source="kpi" data-field="value" data-where="id=city_landings">—</span> городских лендингов и <span data-source="kpi" data-field="value" data-where="id=category_pages">—</span> категорийных страниц</span></li>
+                <li><b>sitemap.xml на <span data-source="kpi" data-field="value" data-where="id=sitemap_urls">—</span> URL без #</b><span class="tb-d">Пересобирается каждую ночь в 03:00, есть sitemap-cities.xml, robots.txt указывает оба</span></li>
+                <li><b>Снят noindex со всего сайта, включён gzip</b><span class="tb-d">noindex оставлен только на админке</span></li>
+                <li><b>Яндекс Вебмастер и Google Search Console</b><span class="tb-d">Права подтверждены, ошибок нет, ИКС <span data-source="kpi" data-field="value" data-where="id=iks">—</span></span></li>
+                <li><b>Редирект /events/ID на страницу игры</b><span class="tb-d">27.10: люди попадают на игру, роботы получают SEO-страницу</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Аналитика</span>
+              <ul class="tb-list">
+                <li><b>Цели Метрики</b><span class="tb-d">Открытие события, регистрация, «Я пойду», создание события, клики на Google Play и Telegram</span></li>
+                <li><b>Вебвизор и разбор поведения</b><span class="tb-d">16.10: спрос на конкретную игру есть, видно, где люди уходят</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Ведущие и реклама</span>
+              <ul class="tb-list">
+                <li><b>5 ведущих выдали игры</b><span class="tb-d">01.10, игры в базу внесли сами. На странице есть контакты ведущего</span></li>
+                <li><b>Шаблон письма ведущему и текст поста через конкретное событие</b><span class="tb-d">Готовы, лежат в базе знаний</span></li>
+                <li><b>Шесть вариантов рекламного плана</b><span class="tb-d">25.09–09.10, с порогами оценки и правилами теста (своя UTM на объявление, вести на конкретное событие)</span></li>
+                <li><b>Приложения в сторах</b><span class="tb-d">Android в Google Play и RuStore, iOS</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tb-col is-fail" id="mk-fail">
+            <div class="tb-col-head"><h3 class="tb-h2">Что не получилось</h3></div>
+
+            <div class="tb-group"><span class="tb-group-name">Не сработало</span>
+              <ul class="tb-list">
+                <li><b>Посев в Telegram: <span data-source="funnel" data-field="value" data-where="id=users">—</span> новый пользователь</b><span class="tb-d">Гипотеза «люди из Telegram запишутся через сайт» не подтвердилась. Новых организаторов и подписчиков канала 0</span></li>
+                <li><b>Каналы «куда пойти» приводят любопытных, а не участников</b><span class="tb-d">Клики дешёвые, конверсия почти нулевая. Самый большой канал дал самый дорогой клик</span></li>
+                <li><b>«Пустой стол» и регистрация</b><span class="tb-d">В участниках только организатор, и человек уходит. Регистрацию даже владельцу было лень проходить. Общая лента не цепляет</span></li>
+                <li><b>Ведущим непонятна ценность</b><span class="tb-d">Фидбек: «не понимаю, кому это надо». Сами ссылку на Tribe не дают</span></li>
+                <li><b>Цель февраля не достигнута</b><span class="tb-d">Планировали 500–1000 уникальных посетителей в месяц через SEO, пользователей пока единицы</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Не запустили</span>
+              <ul class="tb-list">
+                <li><b>VK-таргет и Яндекс Директ</b><span class="tb-d">Были во всех планах, ни один не запущен. Директ 03.10 признан нерентабельным</span></li>
+                <li><b>Бесплатные каналы роста из списка 15.10</b><span class="tb-d">UTM-ссылки ведущих, взаимопиар, Яндекс Справочник и 2ГИС, антикафе с QR-афишей, блогеры по бартеру, «приведи друга». В базе знаний нет отметок, что их запускали</span></li>
+                <li><b>Монетизация</b><span class="tb-d">Ни одна модель не запущена, доход 0 ₽</span></li>
+                <li><b>Нетворкинг</b><span class="tb-d">Категория на сайте готова, но в базе её нет: парсер Timepad берёт только «избранные» события</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Застряло в SEO</span>
+              <ul class="tb-list">
+                <li><b>Яндекс прочитал sitemap один раз</b><span class="tb-d">15.09, тогда в нём было <span data-source="kpi" data-field="value" data-where="id=yandex_links">—</span> ссылок. С тех пор не перечитывал. Это главный блокер</span></li>
+                <li><b>Переобход не нажат</b><span class="tb-d">27.10 инструмент Вебмастера сбоил на стороне Яндекса</span></li>
+                <li><b>Один title на все страницы</b><span class="tb-d">В Метрике не видно, какие события смотрели</span></li>
+                <li><b>HashRouter вместо серверного рендеринга</b><span class="tb-d">Поисковики видят адреса с # как одну страницу. SSR отложен (этап 4 плана)</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tb-col is-check" id="mk-check">
+            <div class="tb-col-head"><h3 class="tb-h2">Что проверить</h3></div>
+
+            <div class="tb-group"><span class="tb-group-name">Сейчас, один раз</span>
+              <ul class="tb-list">
+                <li><b>Вебмастер: переобход sitemap.xml</b><span class="tb-d">Нажать ↻ у sitemap.xml и убедиться, что Яндекс нашёл ссылки</span></li>
+                <li><b>Переобход ключевых страниц</b><span class="tb-d">Главная, /moscow и 5–10 своих игр</span></li>
+                <li><b>«6 рекомендаций» в Вебмастере</b><span class="tb-d">Посмотреть, что Яндекс советует исправить</span></li>
+                <li><b>Google Search Console</b><span class="tb-d">Что sitemap отправлен, и раздел Индексирование → Страницы</span></li>
+                <li><b>Спросить одного ведущего</b><span class="tb-d">«Тебе было бы удобно, если бы записи приходили через сайт, а не в личку?» Бесплатно и быстро</span></li>
+                <li><b>Android crash-free</b><span class="tb-d">В Firebase <span data-source="kpi" data-field="value" data-where="id=crash_free">—</span>%. Разобраться в Crashlytics до любого продвижения приложения</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Раз в 2 недели, 5 минут</span>
+              <ul class="tb-list">
+                <li><b>Метрика: переходы из поисковых систем</b><span class="tb-d">Привлечение / Источники, без роботов. Это и есть главная метрика января</span></li>
+                <li><b>Вебмастер: страницы в поиске и запросы</b><span class="tb-d">Сначала сайт появится по названиям конкретных игр и узким запросам</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-group"><span class="tb-group-name">Если будет новая реклама</span>
+              <ul class="tb-list">
+                <li><b>Смотреть CTR, а не число подписчиков</b><span class="tb-d">Покупать малыми партиями по 2–3 тыс. ₽</span></li>
+                <li><b>Метка MAX в подборке Telega</b><span class="tb-d">Это мессенджер MAX, а не Telegram. Такие каналы проверять отдельно</span></li>
+                <li><b>Пороги оценки</b><span class="tb-d">Клик: хорошо до 30 ₽, плохо от 80 ₽. Конверсия сайт → событие: хорошо выше 5%, плохо ниже 2%. CTR поста выше 3%</span></li>
+                <li><b>Правила теста</b><span class="tb-d">Своя UTM на каждое объявление, вести на конкретное событие, сайт во время теста не менять</span></li>
+              </ul>
+            </div>
+
+            <div class="tb-callout">Реалистично: показы в поиске через 1–2 месяца, трафик через 3–6. «Мафия в Москве» очень конкурентный запрос.</div>
+          </div>
+        </div>
+
+        <div class="tb-two" id="mk-charts">
+          <div class="tb-card tb-section" id="funnel-card">
+            <h3 class="tb-h3">Воронка посева в Telegram, 10.10.2026</h3>
+            <p class="tb-small tb-muted" style="margin:0">От просмотров до новых пользователей в базе</p>
+            <div class="tb-chart" data-chart="funnel" style="min-height:276px"></div>
+          </div>
+          <div class="tb-card tb-section" id="cpc-card">
+            <h3 class="tb-h3">Цена клика, ₽</h3>
+            <p class="tb-small tb-muted" style="margin:0">Пунктир: порог «хорошо» (30 ₽) и «плохо» (80 ₽) из плана 01.10</p>
+            <div class="tb-chart" data-chart="cpc" style="min-height:206px"></div>
+          </div>
+        </div>
+
+        <div class="tb-section" id="ad-plans">
+          <h2 class="tb-h2">Рекламные планы и что с ними стало</h2>
+          <div class="tb-tablewrap">
+            <table class="tb-table">
+              <thead><tr><th>Дата</th><th>Бюджет</th><th>Распределение</th><th>Итог</th></tr></thead>
+              <tbody data-table="adplans"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <details class="tb-details tb-card" id="unfreeze-ideas">
+          <summary>Идеи на случай разморозки (9)</summary>
+          <ol class="tb-lessons">
+            <li>«Я пойду» по имени и телефону без аккаунта, список видит только организатор. Tribe заменяет ведущему блокнот.</li>
+            <li>Кнопка «Записаться у ведущего в Telegram» с целью в Метрике.</li>
+            <li>Свои игры выше парсера, с меткой «Игра Tribe». Парсерные события открывать в новой вкладке.</li>
+            <li>Блок «Вступай в чат Tribe» на странице игры и в ленте.</li>
+            <li>«Сообщить, когда будет новая мафия» (контакт и тип игры).</li>
+            <li>Вход через Telegram и бот с напоминаниями.</li>
+            <li>Напоминание за день до события, еженедельный дайджест «игры недели рядом».</li>
+            <li>Онбординг (город и интересы), кнопка «поделиться» с OG-превью.</li>
+            <li>Посадочные SEO-страницы под запросы «мафия Москва», «квизы Москва», «трансформационная игра Лила Москва».</li>
+          </ol>
+          <p class="tb-small tb-muted">Ботов в участники не добавляем. Честная альтернатива: «обычно приходит N человек», фото с прошлых игр, отзывы. Email и SMS только тем, кто дал согласие.</p>
+        </details>
+      </section>
+
+      <!-- ПРОДУКТ -->
+      <section class="tb-pane" id="product" role="tabpanel" aria-labelledby="tab-product" hidden>
+        <div class="tb-two">
+          <div class="tb-card tb-section" id="what-is">
+            <h2 class="tb-h2">Что это за продукт</h2>
+            <p style="margin:0;line-height:1.5">Агрегатор офлайн-событий в Москве: сайт tribesgo.com, Android (Google Play, RuStore), iOS и Telegram-канал. По замыслу любой может создать своё событие, как объявление на Авито.</p>
+            <p style="margin:0;line-height:1.5"><b>Для участника:</b> одно место вместо 15 каналов, фильтр по дню и району, запись без переписки в личке.<br><b>Для ведущего:</b> новые клиенты, одна ссылка на всё расписание, заполненные столы.<br><b>Отличие от Яндекс Афиши и KudaGo:</b> «с кем пойти» и «бесплатно/недорого».</p>
+            <p class="tb-small tb-muted" style="margin:0">ЦА по базе знаний от 15.10: 25–38 лет, работающие, ищут осмысленное общение.</p>
+          </div>
+          <div class="tb-card tb-section" id="features">
+            <h2 class="tb-h2">Что уже работает</h2>
+            <ul class="tb-list">
+              <li><b>Лента и карта</b><span class="tb-d">Кластеры, фильтры по городу, датам (DateStrip) и категориям, «Подобрать событие»</span></li>
+              <li><b>Создание события в 5 шагов</b><span class="tb-d">Серии дат, до 3 фото, контакты ведущего</span></li>
+              <li><b>Запись</b><span class="tb-d">«Я пойду», «Будь первым», вход через Яндекс</span></li>
+              <li><b>Админка</b><span class="tb-d">Модерация, «Апрувить всё от организатора», опубликованные, удаление</span></li>
+              <li><b>Юридическое</b><span class="tb-d">Уведомление в РКН подано, политики опубликованы, есть английская версия для Google Play</span></li>
+              <li><b>Автодеплой сайта, ночной бэкап базы</b><span class="tb-d">Сайт выкатывается автоматически, база сохраняется каждую ночь</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tb-section" id="tech-open">
+          <h2 class="tb-h2">Открытые технические вопросы</h2>
+          <div class="tb-two">
+            <ul class="tb-list tb-card">
+              <li><b>Код на сервере расходится с GitHub</b><span class="tb-d">Часть парсера и бэкенда есть только на сервере</span></li>
+              <li><b>Хрупкие фильтры</b><span class="tb-d">Кнопка «Все» и даты ломались 5+ раз. Перед правками прогонять сценарий: Сегодня → Спорт → Все → Завтра</span></li>
+              <li><b>Вход через Google и VK не работает</b><span class="tb-d">Google: нет Client Secret. VK: нужен бизнес-аккаунт, вход убран</span></li>
+              <li><b>Подняты не все сервисы</b><span class="tb-d">Геолокация и Telegram-бот не запущены, создание события держится на временной заглушке для сервиса уведомлений</span></li>
+            </ul>
+            <ul class="tb-list tb-card">
+              <li><b>Дубли в настройках nginx</b><span class="tb-d">Одни и те же домены описаны в двух файлах</span></li>
+              <li><b>Бэкапы сами не удаляются</b><span class="tb-d">По ~14 МБ в день: раз в месяц проверять место на диске, настроить «Кибер Бэкап» (ежедневно, 7 копий)</span></li>
+              <li><b>Баланс хостинга</b><span class="tb-d">Держать на месяц вперёд, иначе сервер удалят</span></li>
+              <li><b>Elasticsearch остановлен</b><span class="tb-d">Не хватало RAM, поиск работает через LIKE</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tb-section" id="monetization">
+          <h2 class="tb-h2">Монетизация: идеи, ничего не запущено</h2>
+          <div class="tb-tablewrap">
+            <table class="tb-table">
+              <thead><tr><th>Модель</th><th>Суть</th><th>Когда</th></tr></thead>
+              <tbody>
+                <tr><td>Партнёрские ссылки на билеты</td><td>% с билета у парсерных событий (Admitad и др.)</td><td>Можно сразу</td></tr>
+                <tr><td>Performance для ведущего</td><td>100 ₽ с каждого пришедшего по UTM, первая игра бесплатно</td><td>После подтверждения трафика</td></tr>
+                <tr><td>Подписка ведущего</td><td>1 000–3 000 ₽/мес, первые 3 месяца бесплатно</td><td>После теста</td></tr>
+                <tr><td>Продвижение события</td><td>500–2 000 ₽ за приоритет в ленте на неделю</td><td>Когда есть аудитория</td></tr>
+                <tr><td>Комиссия с записи</td><td>10–15%</td><td>Нужна оплата через сайт</td></tr>
+                <tr><td>Реклама в своём TG-канале</td><td>Когда 3–5 тыс. живых подписчиков</td><td>Потом</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- РИСКИ -->
+      <section class="tb-pane" id="risks" role="tabpanel" aria-labelledby="tab-risks" hidden>
+        <div class="tb-section" id="urgent">
+          <h2 class="tb-h2">Срочно, даже в заморозке</h2>
+          <div class="tb-two">
+            <div class="tb-callout is-bad">
+              <b>Навести порядок с доступами.</b> Отозвать и перевыпустить ключи и пароли, а дальше хранить их в менеджере паролей и GitHub Secrets. Подробный список ведётся отдельно и в публичную версию не входит.
+            </div>
+            <div class="tb-callout is-bad">
+              <b>Android: crash-free users <span data-source="kpi" data-field="value" data-where="id=crash_free">—</span>%.</b> По данным Firebase приложение падает у всех пользователей. Разобраться в Crashlytics до любого продвижения приложения.
+            </div>
+          </div>
+        </div>
+
+        <div class="tb-section" id="lessons">
+          <h2 class="tb-h2">Главные уроки</h2>
+          <ol class="tb-lessons tb-card">
+            <li><b>Сначала спрос, потом фичи.</b> Месяцы ушли на инфраструктуру и баги до первой встречи с пользователями.</li>
+            <li><b>Посевы в «куда пойти» приводят любопытных, а не участников.</b> Клики дешёвые, конверсия почти нулевая.</li>
+            <li><b>Пустой стол и регистрация убивают запись.</b> Нужно честное социальное доказательство и запись без аккаунта.</li>
+            <li><b>Двусторонний рынок с холодного старта тяжёл.</b> Ценность для ведущего должна появиться раньше, чем аудитория.</li>
+            <li><b>Техдолг съедает время:</b> хрупкие фильтры, расхождение кода на сервере и в Git, ручные деплои, небрежное хранение доступов.</li>
+            <li><b>«Проверено» не значит «закрыто».</b> Тест опроверг одну гипотезу, а гипотеза о поисковом трафике ещё проверяется, ответ в январе.</li>
+          </ol>
+        </div>
+
+        <div class="tb-section" id="alternatives">
+          <h2 class="tb-h2">Куда переключился фокус</h2>
+          <div class="tb-tablewrap">
+            <table class="tb-table">
+              <thead><tr><th>Проект</th><th>Вердикт на 27.10</th></tr></thead>
+              <tbody>
+                <tr><td><b>Аудит сайтов</b> («Рентген сайта»)</td><td><span class="tb-tag is-launched">Основной фокус</span> Быстрые деньги, одна сторона рынка, экспертиза получена на Tribe</td></tr>
+                <tr><td>Видимус (видимость в нейросетях)</td><td>Можно продавать в паре с аудитом</td></tr>
+                <tr><td>Проверка сметы</td><td>Второй кандидат, нужна экспертиза в стройке</td></tr>
+                <tr><td>Бумеранго (аренда электроинструмента)</td><td><span class="tb-tag is-no">Отложен</span> Две стороны рынка, логистика, сильные конкуренты</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <p>Снимок на 20 ноября 2026 по базе знаний tribe.md. Цифры лежат в <code>assets/data.js</code>.</p>
+    <p>Публичная версия: подробности о доступах и инфраструктуре убраны.</p>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/dashboard.js"></script>
+</body>
+</html>
